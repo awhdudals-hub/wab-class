@@ -77,16 +77,19 @@
         .subject {
             font-weight: 500;
             color: #2c3e50;
-            word-break: keep-all; 
-            line-height: 1.4;    
         }
 
         .major-app {
             background-color: #e6fffa !important;
             color: #2c7a7b !important;
             font-weight: bold;
-            line-height: 1.4;
+            /* 핵심 수정 사항 */
+            line-height: 1.2;          /* 줄 간격을 좁혀서 두 줄일 때 예쁘게 */
+            white-space: normal;       /* 줄바꿈이 가능하도록 설정 */
+            word-break: keep-all;      /* 단어 단위로 끊어지게 (응용 / 프로그래밍) */
+            padding: 8px 4px !important; 
             position: relative;
+            vertical-align: middle;    /* 글자가 셀 중앙에 오도록 */
         }
 
         /* 마우스 호버 */
@@ -119,7 +122,7 @@
                 <td class="subject">자료 구조</td>
                 <td class="major-app">시스템 프로그래밍</td>
                 <td class="major-app">시스템 프로그래밍</td>
-                <td class="major-app">응용 프로그래밍 개발</td>
+                <td class="major-app">응용<br> 프로그래밍 <br> 개발</td>
                 <td class="subject">스포츠 문화</td>
             </tr>
             <tr>
@@ -127,11 +130,11 @@
                     <span class="period-num">2교시</span>
                     10:00 ~ 10:50
                 </td>
-                <td class="major-app">응용 프로그래밍 개발</td>
+                <td class="major-app">응용 <br>프로그래밍 <br>개발</td>
                 <td class="subject">한국사1</td>
                 <td class="subject">미술 미술실</td>
                 <td class="subject">문학</td>
-                <td class="major-app">응용 프로그래밍 개발</td>
+                <td class="major-app">응용 <br>프로그래밍 <br> 개발</td>
             </tr>
             <tr>
                 <td class="time-col">
@@ -140,9 +143,9 @@
                 </td>
                 <td class="subject">문학</td>
                 <td class="major-app">시스템 프로그래밍</td>
-                <td class="major-app">응용 프로그래밍 개발</td>
+                <td class="major-app">응용 <br> 프로그래밍 <br>개발</td>
                 <td class="major-app">시스템 프로그래밍</td>
-                <td class="major-app">응용 프로그래밍 개발</td>
+                <td class="major-app">응용 <br>프로그래밍 <br>개발</td>
             </tr>
             <tr>
                 <td class="time-col">
@@ -150,8 +153,8 @@
                     12:00 ~ 12:50
                 </td>
                 <td class="subject">한국사1</td>
-                <td class="major-app">응용 프로그래밍 개발</td>
-                <td class="major-app">응용 프로그래밍 개발</td>
+                <td class="major-app">응용 <br>프로그래밍 <br>개발</td>
+                <td class="major-app">응용 <br>프로그래밍 <br>개발</td>
                 <td class="major-app">시스템 프로그래밍</td>
                 <td class="subject">문학</td>
             </tr>
