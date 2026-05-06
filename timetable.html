@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리학교 시간표</title>
+    <style>
+        /* 기본 레이아웃 */
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .timetable-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+
+        /* 테이블 스타일 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed; /* 셀 너비를 일정하게 유지 */
+        }
+
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px 8px;
+            text-align: center;
+        }
+
+        /* 헤더(요일) 스타일 */
+        thead th {
+            background-color: #5d6d7e;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        /* 교시 및 시간 열 */
+        .time-col {
+            background-color: #f8f9fa;
+            width: 120px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .period-num {
+            display: block;
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 3px;
+        }
+
+        /* 점심시간 스타일 */
+        .lunch-row {
+            background-color: #fff9db;
+            font-weight: bold;
+            color: #f08c00;
+        }
+
+        /* 과목 폰트 강조 */
+        .subject {
+            font-weight: 500;
+            color: #2c3e50;
+            word-break: keep-all; 
+            line-height: 1.4;    
+        }
+
+        /* 마우스 호버 */
+        tbody tr:hover {
+            background-color: #fdfdfd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="timetable-card">
+    <h2>🏫 2학년 11반 주간 시간표</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>교시 / 시간</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-col">
+                    <span class="period-num">1교시</span>
+                    09:00 ~ 09:50
+                </td>
+                <td class="subject">자료 구조</td>
+                <td class="subject">시스템 프로그래밍</td>
+                <td class="subject">시스템 프로그래밍</td>
+                <td class="subject">응용 프로그래밍</td>
+                <td class="subject">스포츠 문화</td>
+            </tr>
+            <tr>
+                <td class="time-col">
+                    <span class="period-num">2교시</span>
+                    10:00 ~ 10:50
+                </td>
+                <td class="subject">응용 프로그래밍</td>
+                <td class="subject">한국사1</td>
+                <td class="subject">미술 미술실</td>
+                <td class="subject">문학</td>
+                <td class="subject">응용 프로그래밍</td>
+            </tr>
+            <tr>
+                <td class="time-col">
+                    <span class="period-num">3교시</span>
+                    11:00 ~ 11:50
+                </td>
+                <td class="subject">문학</td>
+                <td class="subject">시스템 프로그래밍</td>
+                <td class="subject">응용 프로그래밍</td>
+                <td class="subject">시스템 프로그래밍</td>
+                <td class="subject">응용 프로그래밍</td>
+            </tr>
+            <tr>
+                <td class="time-col">
+                    <span class="period-num">4교시</span>
+                    12:00 ~ 12:50
+                </td>
+                <td class="subject">한국사1</td>
+                <td class="subject">응용 프로그래밍</td>
+                <td class="subject">응용 프로그래밍</td>
+                <td class="subject">시스템 <br>프로그래밍</td>
+                <td class="subject">문학</td>
+            </tr>
+            <tr class="lunch-row">
+                <td class="time-col">
+                    <span class="period-num">점심시간</span>
+                    12:50 ~ 13:50
+                </td>
+                <td colspan="5">🍱 맛있는 점심시간 되세요! 🍱</td>
+            </tr>
+            <tr>
+                <td class="time-col">
+                    <span class="period-num">5교시</span>
+                    13:50 ~ 14:40
+                </td>
+                <td class="subject">시스템 프로그래밍</td>
+                <td class="subject">영어1</td>
+                <td class="subject">영어1</td>
+                <td class="subject">한국사1</td>
+                <td class="subject">창체</td>
+            </tr>
+            <tr>
+                <td class="time-col">
+                    <span class="period-num">6교시</span>
+                    14:50 ~ 15:40
+                </td>
+                <td class="subject">시스템 프로그래밍</td>
+                <td class="subject">미술 미술실</td>
+                <td class="subject">자율</td>
+                <td class="subject">자료 구조</td>
+                <td class="subject">창체</td>
+            </tr>
+            <tr>
+                <td class="time-col">
+                    <span class="period-num">7교시</span>
+                    15:50 ~ 16:40
+                </td>
+                <td class="subject">시스템 프로그래밍</td>
+                <td class="subject"></td>
+                <td class="subject"></td>
+                <td class="subject">영어1</td>
+                <td class="subject"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
